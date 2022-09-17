@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A2-Practicing HTML</title>
+</head>
+<body>
+
+<h1>Practice HTML</h1>
+
+<h2>Heading Tags</h2>
+
+<p>
+    It is a long-established fact that a reader will be distracted by the readable content of a page when looking at its
+    layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+    using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web
+    page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web
+    sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
+    purpose (injected humour and the like).
+</p>
+
+<p>
+    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some
+    form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a
+    passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the
+    Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true
+    generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence
+    structures, to generate Lorem Ipsum which
+    looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or
+    non-characteristic words etc.
+</p>
+
+<h2>Practicing a List</h2>
+<h3>Ordered List Tag</h3>
+How to join the 1%
+<ol>
+    <li>Get a masters in computer science</li>
+    <li>Get a $100K+ starting salary job</li>
+    <li>Marry a like-minded engineer</li>
+    <li>Do great work for a decade</li>
+</ol>
+
+<h2>Table Tag</h2>
+<table border="1" width="100%">
+    <thead>
+    <tr>
+        <th>Quiz</th>
+        <th>Topic</th>
+        <th>Date</th>
+        <th>Grade</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Q1</td>
+        <td>HTML</td>
+        <td>2/3/21</td>
+        <td>85</td>
+    </tr>
+    <tr>
+        <td>Q2</td>
+        <td>CSS</td>
+        <td>2/10/21</td>
+        <td>90</td>
+    </tr>
+    <tr>
+        <td>Q3</td>
+        <td>JavaScript</td>
+        <td>2/17/21</td>
+        <td>95</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="3">Average</td>
+        <td>90</td>
+    </tr>
+    </tfoot>
+</table>
+
+
+<h2>Image tag</h2>
+
+Loading an image from the internet:
+
+<br/><br/>
+
+<img width="400px"
+     src="https://clutchpoints.com/wp-content/uploads/2022/08/How-to-get-the-Dragon-Ball-Z-Skins-in-Fortnite.jpg"
+     alt="400px Image"/>
+<br/><br/>
+
+Loading a local image:
+
+<br/><br/>
+
+<img src="../../images/goku.jpeg"
+     height="200px" alt="Goku_Image"/>
+
+<br>
+
+<img src="../../images/goku.jpeg"
+     height="100px" alt="100px Image"/>
+
+<br>
+
+<img src="../../images/goku.jpeg"
+     width="100px" height="100px" alt="100px Image"/>
+
+
+<h2>Text fields</h2>
+<form id="text-fields">
+    <!--    <label for="text-fields-username">Username:</label>-->
+    <label for="text-fields-username">Username:</label>
+    <input type="text" id="text-fields-username" placeholder="Your Username here"/><br/><br/>
+
+    <label for="text-fields-password">Password:</label>
+    <input type="password" id="text-fields-password" placeholder="Your Password here"/><br/><br/>
+
+    <label for="text-fields-first-name">First name:</label>
+    <input type="text" id="text-fields-first-name" placeholder="Your First Name here"/><br/><br/>
+
+    <label for="text-fields-last-name">Last name:</label>
+    <input type="text" id="text-fields-last-name" title="Please type your last name" placeholder="Your Last Name here"/><br/><br/>
+    <!-- copy rest of form elements here -->
+</form>
+
+
+<h2>File upload</h2>
+<input type="file"/>
+
+<h2>Radio buttons</h2>
+
+<label>Favorite Dragon Ball Z Character:</label><br/>
+
+<input type="radio" value="Goku"
+       name="radio-dbz" id="radio-goku" checked/>
+<label for="radio-goku">Goku</label><br/>
+
+<input type="radio" value="Vegeta"
+       name="radio-dbz" id="radio-vegeta"/>
+<label for="radio-vegeta">Vegeta</label><br/>
+
+<input type="radio" value="Gohan"
+       name="radio-dbz" id="radio-gohan"/>
+<label for="radio-gohan">Gohan</label><br/>
+
+<input type="radio" value="Krillin"
+       name="radio-dbz" id="radio-krillin"/>
+<label for="radio-krillin">Krillin</label>
+
+</body>
+</html>
