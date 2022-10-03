@@ -1,3 +1,16 @@
+/* Tag Wise Styling */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    padding-left: 16px;
+    width: 650px;
+}
+
+/* Class-wise Styling */
+
+/* Search Bar */
 
 .wd-tuiter-search-bar {
     background: darkgray;
@@ -9,20 +22,7 @@
     border-radius: 18em;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
-    padding-left: 16px;
-    width: 650px;
-}
-
-.wd-tuiter-big-divider {
-    height: 10px;
-    background: darkgray;
-    margin-top: 0;
-    margin-bottom: 0;
-}
+/* Top Navigation Menu */
 
 .wd-tuiter-ul-nav {
     width: 100%;
@@ -65,12 +65,6 @@ body {
     color: rgb(29,161,242);
 }
 
-.wd-tuiter-icon-button {
-    width: 40px;
-    height: 40px;
-    margin-left: 30px;
-}
-
 .wd-tuiter-setting-gear {
     float: right;
     margin-right: 12px;
@@ -84,20 +78,23 @@ body {
     border: 1px solid rgb(110, 118, 125);
 }
 
+.wd-tuiter-big-divider {
+    height: 10px;
+    background: darkgray;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Topics in Explore */
+
+
 .wd-tuiter-div-box {
     border: 1px solid rgb(110, 118, 125);
     padding: 15px;
 }
 
-.wd-trending-section-color { color: rgb(110, 118, 125); }
-
-.wd-tuiter-div-box .wd-h3 {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-}
-.wd-tuiter-div-box .wd-h1 {
-    font-size: 20px;
+.wd-trending-section-color {
+    color: rgb(110, 118, 125);
 }
 
 .wd-tuiter-div-box .wd-detailed-messages {
@@ -114,13 +111,6 @@ body {
     font-size: 13px;
 }
 
-.wd-titles-view-likes-white {
-    margin: 0;
-    padding: 0;
-    font-size: 15px;
-    color: white;
-}
-
 .wd-img-for-you {
     border-radius: 20%;
     float: right;
@@ -129,12 +119,12 @@ body {
     height: 100px;
 }
 
-.wd-img-for-you-small {
+.wd-tuiter-publication-image {
     border-radius: 30%;
     float: bottom;
     width: 15px;
 }
-.wd-img-for-you-small2 {
+.wd-tuiter-verified-badge {
     border-radius: 50%;
     float: bottom;
     width: 15px;
@@ -147,4 +137,42 @@ body {
 .wd-tuiter-float-options{
     float: right;
     color: darkgray;
+}
+
+.wd-tuiter-clearboth-wrapping {
+    clear: both;
+}
+
+.wd-padded-border {
+    border: 1px solid rgb(110, 118, 125);
+    padding: 15px;
+}
+
+.wd-tuiter-topic-heads {
+    font-family: "Arial Black", sans-serif;
+    font-size: 15px;
+}
+
+.wd-padded-border .wd-titles-view-likes {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding: 0;
+    font-size: 13px;
+}
+
+.wd-tuiter-posting-publications {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    color: white;
+    font-family: "Arial Black", sans-serif;
+}
+
+.wd-padded-border .wd-detailed-messages {
+    margin: 1px;
+    padding: 1px;
+    font-size: 15px;
+    width: 80%;
+    float: left;
+    font-family: "Arial Black", sans-serif;
 }
