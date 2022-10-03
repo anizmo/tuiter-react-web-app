@@ -1,0 +1,194 @@
+/* Tag wise Styling */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    padding-left: 16px;
+    max-width: 650px;
+}
+
+p {
+    font-family: Arial, sans-serif;
+}
+
+/* Class wise Styling */
+
+/* Page Settings */
+
+.wd-tuiter-title-bar {
+    border: 1px solid rgb(47, 51, 54);
+}
+
+.wd-tuiter-clear-wrapping {
+    clear: both;
+}
+
+.wd-tuiter-float-options{
+    float: right;
+    color: darkgray;
+}
+
+.wd-tuiter-clickable-links-blind{
+    color: darkgray;
+    text-decoration: None;
+}
+
+.wd-tuiter-div-box {
+    border: 1px solid rgb(110, 118, 125);
+    padding: 15px;
+}
+
+.wd-tuiter-profile-pic {
+    float: left;
+    margin-left: 16px;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+
+.wd-tuiter-profile-avatar{
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+.wd-tuiter-bookmark-title {
+    font-family: "Arial Black", sans-serif;
+    font-size: 20px;
+    padding-left: 16px;
+    color: white;
+    padding-top: 12px;
+}
+.wd-tuiter-user-handle {
+    font-size: 13px;
+    color: lightgray;
+    padding-left: 16px;
+    padding-top: 0;
+}
+
+.wd-club-title-user {
+    float: left;
+    padding-bottom: 12px;
+}
+
+.wd-more-options{
+    float: right;
+    color: dodgerblue;
+    padding-right: 16px;
+}
+
+.wd-tuiter-float-options{
+    float: right;
+    color: darkgray;
+    margin-right: 16px;
+}
+
+.wd-content-placeholder{
+    padding-right: 16px;
+    padding-top: 12px;
+    max-width: 506px;
+    float: left;
+
+}
+
+/* Tuits */
+
+.wd-tuiter-user-handle{
+    font-family: "Arial Black", sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+.wd-tuiter-handle-info{
+    color: lightgray;
+    font-size: 15px;
+    margin-top: 12px;
+}
+
+.wd-tuiter-info{
+    color: white;
+    font-size: 15px;
+    margin-top: 12px;
+}
+
+.wd-tuiter-article-image{
+    width: 504px;
+    height: 264px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 12px;
+}
+
+.wd-ref-image-border{
+    border:1px solid dimgray;
+    padding-top: 0;
+    border-top: none;
+}
+
+.wd-tuit-ref-image-info{
+    border: 1px solid rgb(47, 51, 54);
+    padding: 12px;
+    margin-top: -10px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.wd-tuit-ref-image-title{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    margin-top: 12px;
+}
+
+.wd-tuit-ref-image-content{
+    font-size: 15px;
+    color: lightgray;
+    margin-top: 12px;
+}
+
+.wd-tuit-ref-image-link{
+    font-size: 15px;
+    color: lightgray;
+    margin-bottom: 0;
+}
+
+/* Bottom Icons */
+
+.wd-tuit-icons{
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+    margin-top: 12px;
+}
+
+.wd-tuit-icons > .wd-icons{
+    display: inline-block;
+    padding-right: 12px;
+    justify-content: space-around ;
+
+}
+
+.wd-tuit-icons > .wd-icons > .wd-icon-info{
+    color: lightgray;
+    font-size: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
+
+}
+
+.wd-tuit-icons > .wd-icons > .wd-icon-info-heart{
+    color: red;
+    font-size: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.wd-spacing{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.wd-icon-links-red{
+    color: red;
+    text-decoration: None;
+}
