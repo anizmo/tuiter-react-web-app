@@ -62,7 +62,7 @@ p {
 .wd-tuiter-user-handle {
     font-size: 13px;
     color: lightgray;
-    padding-left: 16px;
+    padding-left: 0px;
     padding-top: 0;
 }
 
@@ -88,7 +88,12 @@ p {
     padding-top: 12px;
     max-width: 506px;
     float: left;
+}
 
+.wd-tuiter-page-handle{
+    color: lightgray;
+    font-size: 15px;
+    margin-left: 16px;
 }
 
 /* Tuits */
