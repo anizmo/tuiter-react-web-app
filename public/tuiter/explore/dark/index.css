@@ -1,0 +1,114 @@
+body {
+    background: black;
+}
+
+.dark-gray-background {
+    background: #16181c;
+    color: white;
+    border: none;
+}
+
+.black-background-with-white-text {
+    background: black;
+    color: white;
+    border: none;
+}
+
+.divider-image-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: gray;
+}
+
+.dark-gray-border {
+    border: solid 2px #16181c;
+    padding-left: 0;
+    padding-right: 0;
+    border-top: none;
+}
+
+.black-background-no-border {
+    background: black;
+    color: white;
+    border: none;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.padding-20 {
+    padding-left: 25px;
+}
+
+.active-white-button {
+    background: white;
+    color: black;
+}
+
+.padding-0 {
+    padding-left: 0;
+}
+
+.gray-color {
+    color: gray;
+}
+
+.follow-btn {
+    position: absolute;
+    right: 10px;
+    width: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.more-icon {
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+}
+
+.text-style-recommendation {
+    position: relative;
+    z-index: 2;
+}
+
+.text-in-image {
+    bottom: 10px;
+    left: 10px;
+}
+
+.small-text-in-image {
+    bottom: 100px;
+    left: 12px;
+}
+
+.top-margin-0 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.left-margin-medium {
+    margin-left: 16px;
+}
+
+.left-nav-selected {
+    font-family: "Arial Black", sans-serif;
+}
+
+.rounded-image {
+    border-radius: 12px;
+}
+
+.selected-nav-bottom-underline {
+    border-bottom: solid 2px #0b6efd;
+    border-bottom-left-radius: 2px ;
+    border-bottom-right-radius: 2px;
+    padding-bottom:8px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.gear-style {
+    color: white;
+    font-size: medium;
+    margin-top: 8px
+}
