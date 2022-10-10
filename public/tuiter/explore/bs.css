@@ -1,0 +1,52 @@
+.foreground-border {
+    color: gray;
+}
+
+.gear-color {
+    color: dodgerblue;
+}
+
+.blue-tweet-button {
+    background-color: dodgerblue;
+    color: white;
+    font-family: "Arial", sans-serif;
+}
+.follow-btn {
+    position: absolute;
+    right: 10px;
+    width: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.remove-focus-outline:focus {
+    outline: none;
+}
+
+.more-icon {
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+}
+
+.text-style-recommendation {
+    position: relative;
+    z-index: 2;
+}
+
+.text-in-image {
+    bottom: 10px;
+    left: 10px;
+}
+
+.rounded-image {
+    border-radius: 12px;
+}
+
+.set-width-85 {
+    width: 85%;
+}
+
+.set-width-15 {
+    width: 15%;
+}
