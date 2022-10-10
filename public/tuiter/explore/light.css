@@ -1,8 +1,8 @@
-.gray-color {
+.wd-gray-color {
     color: gray;
 }
 
-.follow-btn {
+.wd-follow-btn {
     position: absolute;
     right: 10px;
     width: auto;
@@ -11,22 +11,22 @@
     z-index: 10;
 }
 
-.more-icon {
+.wd-more-icon {
     width: 1em;
     height: 1em;
     line-height: 1em;
 }
 
-.text-style-recommendation {
+.wd-text-style-recommendation {
     position: relative;
     z-index: 2;
 }
 
-.text-in-image {
+.wd-text-in-image {
     bottom: 10px;
     left: 10px;
 }
 
-.rounded-image {
+.wd-rounded-image {
     border-radius: 12px;
 }
