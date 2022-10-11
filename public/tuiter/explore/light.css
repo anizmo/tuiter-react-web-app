@@ -30,3 +30,7 @@
 .wd-rounded-image {
     border-radius: 12px;
 }
+
+.nav>li {
+    display: inline-block;
+}
