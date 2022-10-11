@@ -32,7 +32,6 @@ body {
     color: white;
     border: none;
     margin-top: 12px;
-    margin-bottom: 12px;
 }
 
 .wd-padding-25 {
@@ -46,7 +45,7 @@ body {
 }
 
 .wd-padding-0 {
-    padding-left: 0;
+    padding: 0;
 }
 
 .wd-gray-color {
