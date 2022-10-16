@@ -96,7 +96,9 @@ console.log(threePlusOne);
 
 console.log('Arrays')
 let numberArray1 = [1, 2, 3, 4, 5];
+console.log(numberArray1);
 let stringArray1 = ['string1', 'string2'];
+console.log(stringArray1);
 let variableArray1 = [
     functionScoped,
     blockScoped,
@@ -104,6 +106,7 @@ let variableArray1 = [
     numberArray1,
     stringArray1
 ];
+console.log(variableArray1);
 
 console.log("Array index and length");
 const length1 = numberArray1.length;

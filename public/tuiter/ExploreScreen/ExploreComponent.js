@@ -8,7 +8,7 @@ const ExploreComponent = () => {
                         <span class="input-group-text bg-transparent border-0">
                             <i class="fas fa-search text-dark"></i>
                         </span>
-                        <input type="text" placeholder="Search Twitter" class="form-control bg-transparent border-0">
+                        <input type="text" placeholder="Search Tuiter" class="form-control bg-transparent border-0">
                     </div>
                 </div>
                 <div class="col-1 text-primary">
@@ -17,19 +17,19 @@ const ExploreComponent = () => {
            </div>
            <ul class="nav mb-2 nav-tabs">
                <li class="nav-item">
-                <a class="nav-link active" data-bs-toggle="tab" href="#foryou">For you</a>
+                <a class="nav-link active" data-bs-toggle="tab" href="for-you.html">For you</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#trending">Trending</a>
+                <a class="nav-link" data-bs-toggle="tab" href="trending.html">Trending</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#news">News</a>
+                <a class="nav-link" data-bs-toggle="tab" href="news.html">News</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#sports">Sports</a>
+                <a class="nav-link" data-bs-toggle="tab" href="sports.html">Sports</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link  d-none d-md-block" data-bs-toggle="tab" href="#entertainment">Entertainment</a>
+                <a class="nav-link  d-none d-md-block" data-bs-toggle="tab" href="entertainment.html">Entertainment</a>
               </li>
            </ul>
            <ul class="list-group border-0" style="margin-bottom: 12px">
