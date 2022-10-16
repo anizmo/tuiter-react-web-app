@@ -1,0 +1,114 @@
+body {
+    background: black;
+}
+
+.wd-dark-gray-background {
+    background: #16181c;
+    color: white;
+    border: none;
+}
+
+.wd-black-background-with-white-text {
+    background: black;
+    color: white;
+    border: none;
+}
+
+.wd-divider-image-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: gray;
+}
+
+.wd-dark-gray-border {
+    border: solid 2px #16181c;
+    padding-left: 0;
+    padding-right: 0;
+    border-top: none;
+}
+
+.wd-black-background-no-border {
+    background: black;
+    color: white;
+    border: none;
+    margin-top: 12px;
+}
+
+.wd-padding-25 {
+    padding-left: 25px;
+}
+
+.wd-active-white-button {
+    background: white;
+    color: black;
+    z-index: 10;
+}
+
+.wd-padding-0 {
+    padding: 0;
+}
+
+.wd-gray-color {
+    color: gray;
+}
+
+.wd-follow-btn {
+    position: absolute;
+    right: 10px;
+    width: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wd-more-icon {
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+}
+
+.wd-text-style-recommendation {
+    position: relative;
+    z-index: 2;
+}
+
+.wd-text-in-image {
+    bottom: 10px;
+    left: 10px;
+}
+
+.wd-small-text-in-image {
+    bottom: 100px;
+    left: 12px;
+}
+
+.wd-top-margin-0 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.wd-left-margin-medium {
+    margin-left: 16px;
+}
+
+.wd-left-nav-selected {
+    font-family: "Arial Black", sans-serif;
+}
+
+.wd-rounded-image {
+    border-radius: 12px;
+}
+
+.wd-selected-nav-bottom-underline {
+    border-bottom: solid 2px #0b6efd;
+    border-bottom-left-radius: 2px ;
+    border-bottom-right-radius: 2px;
+    padding-bottom:8px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.wd-gear-style {
+    color: white;
+    font-size: medium;
+    margin-top: 8px
+}

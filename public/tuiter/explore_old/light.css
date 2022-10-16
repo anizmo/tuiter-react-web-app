@@ -1,0 +1,36 @@
+.wd-gray-color {
+    color: gray;
+}
+
+.wd-follow-btn {
+    position: absolute;
+    right: 10px;
+    width: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.wd-more-icon {
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+}
+
+.wd-text-style-recommendation {
+    position: relative;
+    z-index: 2;
+}
+
+.wd-text-in-image {
+    bottom: 10px;
+    left: 10px;
+}
+
+.wd-rounded-image {
+    border-radius: 12px;
+}
+
+.nav>li {
+    display: inline-block;
+}
