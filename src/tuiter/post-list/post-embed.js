@@ -1,4 +1,7 @@
 import React from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faCircleCheck} from "@fortawesome/free-solid-svg-icons/faCircleCheck";
+
 const PostEmbed = (
     {
         embed = {
@@ -15,15 +18,17 @@ const PostEmbed = (
     switch (embed.type) {
         case "image":
             return(
-                <img className="float-none rounded-4 wd-div-100" src={`/images/${embed.content}`}/>
+                <img className="float-none rounded-4 wd-div-100" src={`/images/${embed.content}`} alt={embed.content}/>
             );
-        case "post":
+        case "tuit":
             return(
                 <li className="list-group-item rounded-2">
                     <div className="row">
                         <div className="col-12">
-                            <div><img width={20} className="float-start rounded-5 wd-right-margin" src={`/images/${embed.image}`}/>
-                                <span className="fw-bolder wd-right-margin">{embed.name}</span> <span className="fw-light">{embed.handle} . {embed.time}</span>
+                            <div><img width={20} className="float-start rounded-5 wd-right-margin" src={`/images/${embed.image}`} alt={embed.name}/>
+                                <span className="fw-bolder">{embed.name}</span>
+                                {embed.isVerified === true && <FontAwesomeIcon className={"wd-right-margin wd-left-margin"} icon={faCircleCheck} />}
+                                <span className="fw-light">{embed.handle} . {embed.time}</span>
                             </div>
                             <div>{embed.content}</div>
                         </div>

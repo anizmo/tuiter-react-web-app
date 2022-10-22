@@ -20,13 +20,26 @@
 }
 
 .wd-repost-text {
-    color: darkgray;
+    color: #536471;
     margin-left: 60px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
+    font-family: "Arial Rounded MT Bold", sans-serif;
 }
 
 .wd-right-margin {
     margin-right: 8px;
+}
+
+.wd-left-margin {
+    margin-left: 8px;
+}
+
+.wd-top-margin {
+    margin-top: 16px;
+}
+
+.wd-bottom-margin {
+    margin-bottom: 16px;
 }
 
 .wd-bottom-margin-medium {
@@ -35,4 +48,10 @@
 
 .wd-reaction-count {
     color: darkgray;
+}
+
+.wd-thread-link {
+    color: #1d9bf0;
+    text-underline: none;
+    text-decoration: none;
 }

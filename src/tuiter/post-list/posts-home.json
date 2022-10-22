@@ -4,13 +4,15 @@
     "name": "SpaceX",
     "isVerified": true,
     "handle": "@SpaceX",
-    "content": "Dennis and Akiko Tito are the first two crewmembers on Starship's second commercial spaceflight around the moon -> spacex.com/updates",
+    "content": "Dennis and Akiko Tito are the first two crewmembers on Starship's second commercial spaceflight around the moon → ",
     "time": "15h",
     "image": "spacex.png",
     "commentsCount": 595,
     "retweetedBy": "Elon Musk",
     "retweetCount": 1168,
     "likesCount": "11.1K",
+    "url": "spacex.com/updates",
+    "threadUrl": "https://twitter.com/SpaceX/status/1580187420015722496?ref_src=twsrc%5Etfwm",
     "embed": {
       "type": "image",
       "content": "couple.png"
@@ -28,8 +30,8 @@
     "retweetCount": 1601,
     "likesCount": "19.2K",
     "embed": {
-      "type": "post",
-      "content": "Starlink for RVs now has over 100,000 customers! Access high-speed, low-latency internet on an as-needed basis anywhere Starlink provides active coverage -> starlink.com/rv",
+      "type": "tuit",
+      "content": "Starlink for RVs now has over 100,000 customers! Access high-speed, low-latency internet on an as-needed basis anywhere Starlink provides active coverage → starlink.com/rv",
       "name": "SpaceX",
       "isVerified": true,
       "handle": "@elonmusk",
