@@ -31,7 +31,7 @@ const PostItem = (post) => {
                         </a>
                     </span>
                 </div>
-                <div class="wd-item-footer">
+                <div class="wd-div-100">
                     <ul class="wd-reaction-list">
                         <li>
                             <a href="#!" class="wd-remove-link-text-decor text-secondary">

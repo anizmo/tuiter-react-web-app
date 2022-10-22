@@ -1,0 +1,38 @@
+.wd-div-100 {
+    width: 100%;
+}
+
+.wd-item-footer {
+    width: 80%;
+}
+
+.wd-reaction-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    color: #a7a2a2;
+    padding-top: 12px;
+    padding-inline-start: 0;
+}
+
+.wd-remove-link-text-decor {
+    text-decoration: none;
+}
+
+.wd-repost-text {
+    color: darkgray;
+    margin-left: 60px;
+    margin-bottom: 0px;
+}
+
+.wd-right-margin {
+    margin-right: 8px;
+}
+
+.wd-bottom-margin-medium {
+    margin-bottom: 16px;
+}
+
+.wd-reaction-count {
+    color: darkgray;
+}
