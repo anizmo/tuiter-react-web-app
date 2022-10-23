@@ -1,6 +1,7 @@
 import React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCircleCheck} from "@fortawesome/free-solid-svg-icons/faCircleCheck";
+import * as PropTypes from "prop-types";
 
 const PostEmbed = (
     {
@@ -22,18 +23,8 @@ const PostEmbed = (
             );
         case "tuit":
             return(
-                <li className="list-group-item rounded-2">
-                    <div className="row">
-                        <div className="col-12">
-                            <div><img width={20} className="float-start rounded-5 wd-right-margin" src={`/images/${embed.image}`} alt={embed.name}/>
-                                <span className="fw-bolder">{embed.name}</span>
-                                {embed.isVerified === true && <FontAwesomeIcon className={"wd-right-margin wd-left-margin"} icon={faCircleCheck} />}
-                                <span className="fw-light">{embed.handle} . {embed.time}</span>
-                            </div>
-                            <div>{embed.content}</div>
-                        </div>
-                    </div>
-                </li>
+                <EmbeddedTuitComponent image={embed.image} alt={embed.name} verified={embed.isVerified}
+                                      handle={embed.handle} time={embed.time} content={embed.content}/>
             );
         default:
             return(
@@ -42,4 +33,31 @@ const PostEmbed = (
     }
 
 };
+
+class EmbeddedTuitComponent extends React.Component {
+    render() {
+        return <li className="list-group-item rounded-2">
+            <div className="row">
+                <div className="col-12">
+                    <div><img width={20} className="float-start rounded-5 wd-right-margin" src={`/images/${this.props.image}`} alt={this.props.alt}/>
+                        <span className="fw-bolder">{this.props.alt}</span>
+                        {this.props.verified === true && <FontAwesomeIcon className={"wd-right-margin wd-left-margin"} icon={faCircleCheck}/>}
+                        <span className="wd-reaction-count">{this.props.handle} . {this.props.time}</span>
+                    </div>
+                    <div>{this.props.content}</div>
+                </div>
+            </div>
+        </li>;
+    }
+}
+
+EmbeddedTuitComponent.propTypes = {
+    image: PropTypes.string,
+    alt: PropTypes.string,
+    verified: PropTypes.bool,
+    handle: PropTypes.string,
+    time: PropTypes.string,
+    content: PropTypes.string
+};
+
 export default PostEmbed;

@@ -16,8 +16,8 @@ const PostItem = (
             "content": "Dennis and Akiko Tito are the first two crewmembers on Starship's second commercial spaceflight around the moon -> spacex.com/updates",
             "time": "15h",
             "image": "spacex.png",
-            "commentsCount": 595,
-            "retweetCount": 1168,
+            "commentsCount": "595",
+            "retweetCount": "1168",
             "likesCount": "11.1K",
             "threadUrl": "www.google.com",
             "embed": {
@@ -38,12 +38,12 @@ const PostItem = (
                 </p>}
                 <br/>
                 <div className="col-2">
-                    <img width={70} className="float-end rounded-5" src={`/images/${post.image}`} alt={post.name}/>
+                    <img width={80} className="float-end rounded-circle" src={`/images/${post.image}`} alt={post.name}/>
                 </div>
                 <div className="col-10">
                     <div className="fw-bolder">{post.name}
                         {post.isVerified === true && <FontAwesomeIcon className={"wd-right-margin wd-left-margin"} icon={faCircleCheck} />}
-                        <span className="fw-light">{post.handle} . {post.time}</span>
+                        <span className="fw-normal wd-reaction-count">{post.handle} . {post.time}</span>
                         <FontAwesomeIcon className={"wd-right-margin wd-left-margin float-end wd-reaction-count"} icon={faEllipsis} /></div>
                     <div className={"wd-bottom-margin-medium"}>{post.content} <a className={"wd-thread-link"} href={`https://www.${post.url}`}>{post.url}</a></div>
                     <PostEmbed embed = {post.embed}/>

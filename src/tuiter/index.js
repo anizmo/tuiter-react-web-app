@@ -16,6 +16,11 @@ function Tuiter() {
                 <Routes>
                     <Route path="home"    element={<HomeComponent/>}/>
                     <Route path="explore" element={<ExploreComponent/>}/>
+                    <Route path="messages" element={<h1>Messages Coming Soon</h1>}/>
+                    <Route path="bookmarks" element={<h1>Bookmarks Coming Soon</h1>}/>
+                    <Route path="lists" element={<h1>Lists Coming Soon</h1>}/>
+                    <Route path="profile" element={<h1>Profile Coming Soon</h1>}/>
+                    <Route path="more" element={<h1>More Coming Soon</h1>}/>
                 </Routes>
             </div>
             <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
