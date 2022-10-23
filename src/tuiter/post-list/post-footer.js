@@ -9,8 +9,7 @@ import {faArrowUpFromBracket} from "@fortawesome/free-solid-svg-icons/faArrowUpF
 const PostFooter = ({
     retweetCount = "123",
     likesCount = "111.1K",
-    commentsCount = "300"
-                    }) => {
+    commentsCount = "300"}) => {
     return <div className="wd-item-footer">
         <ul className="wd-reaction-list">
             <li>
