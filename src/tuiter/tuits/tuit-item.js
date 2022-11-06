@@ -5,23 +5,7 @@ import {faCircleCheck} from "@fortawesome/free-solid-svg-icons/faCircleCheck";
 import {useDispatch} from "react-redux";
 import {deleteTuit} from "./tuits-reducer";
 
-const TuitItem = (
-    {
-        post = {
-            "topic": "Space",
-            "userName": "SpaceX",
-            "time": "2h",
-            "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
-            "image": "tesla.png",
-            "liked": true,
-            "replies": 123,
-            "retuits": 432,
-            "likes": 2345,
-            "handle": "@spacex",
-            "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
-        }
-    }
-) => {
+const TuitItem = ({post}) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
         dispatch(deleteTuit(id));
@@ -44,7 +28,7 @@ const TuitItem = (
                         <span className="fw-normal wd-reaction-count">{post.handle} . {post.time}</span>
                     </div>
                     <div className={"wd-bottom-margin-medium"}>{post.tuit}</div>
-                    <PostFooter likesCount={post.likes} commentsCount={post.replies} retweetCount={post.retuits}/>
+                    <PostFooter post={post}/>
                 </div>
             </div>
         </li>

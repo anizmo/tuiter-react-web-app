@@ -4,9 +4,12 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowLeftLong, faBirthdayCake, faCalendar, faLocation} from "@fortawesome/free-solid-svg-icons";
 import {Link} from "react-router-dom";
 import "./index.css"
+import {locale} from "moment";
+import dateFormat from "dateformat";
 
 const ProfileComponent = () => {
     const profile = useSelector((state) => state.profile);
+    locale('en');
     return (
         <>
             <li className="list-group-item wd-margin-bottom-large wd-margin-bottom-small">
@@ -15,7 +18,7 @@ const ProfileComponent = () => {
                         <FontAwesomeIcon className="align-self-center wd-margin-top-small" icon={faArrowLeftLong}/>
                     </div>
                     <div className="col-10">
-                        <span className="fw-bold wd-toolbar-header">{profile.name}</span>
+                        <span className="fw-bold wd-profile-name">{profile.firstName} {profile.lastName}</span>
                         <div className="text-secondary">{profile.tuitsCount} Tuits</div>
                     </div>
                 </div>
@@ -33,7 +36,7 @@ const ProfileComponent = () => {
 
                     <div>
                         <Link to="/tuiter/edit-profile">
-                            <button className="btn btn-primary rounded-pill wd-override-overlap float-end">Edit
+                            <button className="btn btn-outline-dark rounded-pill wd-override-overlap float-end">Edit
                                 Profile
                             </button>
                         </Link>
@@ -43,7 +46,7 @@ const ProfileComponent = () => {
             </li>
             <li className="list-group-item">
                 <div className="row">
-                    <span className="fw-bolder wd-toolbar-header">{profile.name}</span>
+                    <span className="fw-bolder wd-profile-name">{profile.firstName} {profile.lastName}</span>
                     <span className="text-secondary wd-margin-bottom-small">{profile.handle}</span>
                     <span className="text-body wd-margin-bottom-small">{profile.bio}</span>
 
@@ -58,13 +61,13 @@ const ProfileComponent = () => {
                             <li>
                                 <a href="#" className="wd-remove-link-text-decor wd-reaction-count">
                                     <FontAwesomeIcon className="wd-right-margin" icon={faBirthdayCake}/>
-                                    <span className="wd-reaction-count">Born {profile.dateOfBirth}</span>
+                                    <span className="wd-reaction-count">Born {dateFormat(profile.dateOfBirth, "dS mmmm, yyyy")}</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" className="wd-remove-link-text-decor wd-reaction-count">
                                     <FontAwesomeIcon className="wd-right-margin" icon={faCalendar}/>
-                                    <span className="wd-reaction-count">Joined {profile.dateJoined}</span>
+                                    <span className="wd-reaction-count">Joined {dateFormat(profile.dateJoined, "mmmm, yyyy")}</span>
                                 </a>
                             </li>
                         </ul>

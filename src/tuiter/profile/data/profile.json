@@ -1,13 +1,14 @@
 {
-  "name": "Anuj Potdar",
+  "firstName": "Anuj",
+  "lastName": "Potdar",
   "handle": "@anizmo",
   "profilePicture": "profile_pic.png",
   "bannerPicture": "header.png",
   "bio": "This is the bio that is coming from the redux store",
   "website": "anizmo.github.io",
   "location": "Boston, MA",
-  "dateOfBirth": "9/11/1995",
-  "dateJoined": "4/2009",
+  "dateOfBirth": "1995-11-09",
+  "dateJoined": "1-4-2009",
   "followingCount": 1,
   "followersCount": 1000,
   "tuitsCount": "1,234"

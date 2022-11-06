@@ -3,8 +3,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {updateProfile} from "../profile-reducer";
 import {faClose} from "@fortawesome/free-solid-svg-icons";
-import "../index.css"
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 const EditProfileComponent = () => {
 
@@ -23,35 +22,40 @@ const EditProfileComponent = () => {
         setProfileState(updatedProfileJson);
     }
 
+    const navigation = useNavigate();
     const onSaveClicked = () => {
-        dispatch(updateProfile(profileState));
+        if (performValidation()) {
+            dispatch(updateProfile(profileState));
+            navigation("/tuiter/profile")
+        }
     }
 
     const onCancelClicked = () => {
         dispatch(updateProfile(initialData))
+        navigation("/tuiter/profile")
+    }
+
+    const performValidation = () => {
+        console.log(profileState);
+        if (profileState.firstName === '' || profileState.lastName === '' || profileState.location === ''
+            || profileState.bio === '' || profileState.website === '' || profileState.dateOfBirth === '') {
+            alert("One more fields are empty, kindly fill all details and retry.");
+            return false;
+        }
+
+        return true;
     }
 
     return (
         <div className="row">
-            <li className="list-group-item wd-margin-bottom-large wd-margin-bottom-small">
-                <div className="row">
-                    <div className="col-auto">
-                        <Link to="/tuiter/profile">
-                            <FontAwesomeIcon
-                                className="align-self-center wd-margin-top-small wd-margin-bottom-small wd-left-margin-medium"
-                                icon={faClose} onClick={onCancelClicked}/>
-                        </Link>
-                    </div>
-                    <div className="col-10">
-                        <span className="fw-bold wd-toolbar-header">Edit Profile</span>
-                    </div>
-                    <div>
-                        <Link to="/tuiter/profile">
-                            <button className="btn btn-primary rounded-pill wd-override-overlap float-end"
-                                    onClick={onSaveClicked}>Save
-                            </button>
-                        </Link>
-                    </div>
+            <li className="list-group-item wd-margin-bottom-small wd-margin-right-smaller">
+                <div className="col">
+                    <FontAwesomeIcon
+                        className="align-self-center"
+                        icon={faClose} onClick={onCancelClicked}/>
+                    <span className="fw-bold wd-toolbar-header">Edit Profile</span>
+                    <button className="btn btn-dark rounded-pill float-end"
+                            onClick={onSaveClicked}>Save</button>
                 </div>
             </li>
             <li className="list-group-item wd-margin-bottom-large">
@@ -67,9 +71,15 @@ const EditProfileComponent = () => {
             </li>
 
             <div className="form-floating mb-3">
-                <input type="text" className="form-control" id="name" name="name" placeholder="John Doe"
-                       defaultValue={profile.name} onChange={handleFieldChanges}/>
-                <label htmlFor="name">Name</label>
+                <input type="text" className="form-control" id="firstName" name="firstName" placeholder="John"
+                       defaultValue={profile.firstName} onChange={handleFieldChanges}/>
+                <label htmlFor="firstName">First Name</label>
+            </div>
+
+            <div className="form-floating mb-3">
+                <input type="text" className="form-control" id="lastName" name="lastName" placeholder="Doe"
+                       defaultValue={profile.lastName} onChange={handleFieldChanges}/>
+                <label htmlFor="lastName">Last Name</label>
             </div>
 
             <div className="form-floating mb-3">
@@ -89,6 +99,12 @@ const EditProfileComponent = () => {
                 <input type="text" className="form-control" id="website" name="website" placeholder="www.google.com"
                        defaultValue={profile.website} onChange={handleFieldChanges}/>
                 <label htmlFor="website">Website</label>
+            </div>
+
+            <div className="form-floating mb-3">
+                <input type="date" className="form-control" id="dateOfBirth" name="dateOfBirth" placeholder="1990-01-01"
+                       defaultValue={profile.dateOfBirth} onChange={handleFieldChanges}/>
+                <label htmlFor="dateOfBirth">Date of Birth</label>
             </div>
 
         </div>

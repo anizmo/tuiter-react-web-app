@@ -1,5 +1,5 @@
 import {createSlice} from "@reduxjs/toolkit";
-import profile from "./profile.json"
+import profile from "./data/profile.json"
 
 const profileSlice = createSlice({
     name: "profile",
