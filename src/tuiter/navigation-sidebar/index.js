@@ -1,6 +1,18 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import {useLocation} from "react-router";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {
+    faBell,
+    faBookmark,
+    faEllipsis,
+    faEnvelope,
+    faFlask,
+    faHashtag,
+    faHome,
+    faList,
+    faUser
+} from "@fortawesome/free-solid-svg-icons";
 
 const NavigationSidebar = () => {
     const {pathname} = useLocation();
@@ -9,32 +21,34 @@ const NavigationSidebar = () => {
     return (
         <div className="list-group">
             <a className="list-group-item">Tuiter</a>
-            <Link to="/tuiter/home" className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
-                Home
+            <Link to="/tuiter" className={`list-group-item ${active === '' ? 'active' : ''}`}>
+                <FontAwesomeIcon icon={faHome}/> Home
             </Link>
             <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore' ? 'active' : ''}`}>
-                Explore
+                <FontAwesomeIcon icon={faHashtag}/> Explore
             </Link>
             <Link to="/" className="list-group-item">
-                Labs
+                <FontAwesomeIcon icon={faFlask}/> Labs
             </Link>
-            <Link to="/tuiter/notifications" className={`list-group-item ${active === 'notifications' ? 'active' : ''}`}>
-                Notifications
+            <Link to="/tuiter/notifications"
+                  className={`list-group-item ${active === 'notifications' ? 'active' : ''}`}>
+                <FontAwesomeIcon icon={faBell}/> Notifications
             </Link>
             <Link to="/tuiter/messages" className={`list-group-item ${active === 'messages' ? 'active' : ''}`}>
-                Messages
+                <FontAwesomeIcon icon={faEnvelope}/> Messages
             </Link>
             <Link to="/tuiter/bookmarks" className={`list-group-item ${active === 'bookmarks' ? 'active' : ''}`}>
-                Bookmarks
+                <FontAwesomeIcon icon={faBookmark}/> Bookmarks
             </Link>
             <Link to="/tuiter/lists" className={`list-group-item ${active === 'lists' ? 'active' : ''}`}>
-                Lists
+                <FontAwesomeIcon icon={faList}/> Lists
             </Link>
-            <Link to="/tuiter/profile" className={`list-group-item ${active === 'profile' ? 'active' : ''}`}>
-                Profile
+            <Link to="/tuiter/profile"
+                  className={`list-group-item ${active === 'profile' || active === 'edit-profile' ? 'active' : ''}`}>
+                <FontAwesomeIcon icon={faUser}/> Profile
             </Link>
             <Link to="/tuiter/more" className={`list-group-item ${active === 'more' ? 'active' : ''}`}>
-                More
+                <FontAwesomeIcon icon={faEllipsis}/> More
             </Link>
         </div>
     );

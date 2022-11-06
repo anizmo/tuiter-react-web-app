@@ -1,0 +1,63 @@
+.h-10 {
+    height: 30vh;
+    width: 100%;
+}
+
+.wd-overlap-profile {
+    margin-left: 2%;
+    margin-top: -10%;
+    float: start;
+}
+
+.wd-override-overlap {
+    margin-left: 0;
+    margin-top: -8%;
+    float: end;
+}
+
+.wd-reaction-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    color: #a7a2a2;
+    padding-top: 12px;
+    padding-inline-start: 0;
+    margin-bottom: 8px;
+}
+
+.wd-margin-bottom-large {
+    margin-bottom: 30px;
+}
+
+.wd-margin-bottom-medium {
+    margin-bottom: 20px;
+}
+
+.wd-margin-bottom-small {
+    margin-bottom: 10px;
+}
+
+.wd-margin-top-small {
+    margin-top: 15px;
+}
+
+.wd-margin-top-x-small {
+    margin-top: 1px;
+}
+
+.wd-item-footer {
+    width: 80%;
+    justify-content: start;
+}
+
+.wd-toolbar-header {
+    font-size: 20px;
+}
+
+.wd-border {
+    border: black 2px;
+    border-radius: 200px;
+}
+
+
+
