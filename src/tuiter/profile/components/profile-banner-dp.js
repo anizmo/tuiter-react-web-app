@@ -10,7 +10,7 @@ const ProfileBannerDp = ({profile}) => {
                     <img src={`/images/${profile.bannerPicture}`} width="100%" height="350px" alt={'Banner Picture'}/>
                 </div>
 
-                <div className="rounded-circle wd-overlap-profile wd-border">
+                <div className="rounded-circle wd-overlap-profile">
                     <img className="rounded-circle wd-overlap-profile wd-border"
                          src={`/images/${profile.profilePicture}`} width={150} alt={'profile-pic'}/>
                 </div>

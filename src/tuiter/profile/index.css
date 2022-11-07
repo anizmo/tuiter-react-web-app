@@ -83,8 +83,10 @@
 }
 
 .wd-border {
-    border: black 2px;
-    border-radius: 200px;
+    border-radius: 125px;
+    border: 3px solid white;
+    width: 150px;
+    height: 150px;
 }
 
 .wd-margin-left-smaller {
