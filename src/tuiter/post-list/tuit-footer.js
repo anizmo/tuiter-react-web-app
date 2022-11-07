@@ -1,11 +1,10 @@
 import React from "react";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faComment} from "@fortawesome/free-regular-svg-icons";
-import {faHeartPulse, faRetweet} from "@fortawesome/free-solid-svg-icons";
-import {faHeart} from "@fortawesome/fontawesome-free-regular";
+import {faComment} from "@fortawesome/free-solid-svg-icons";
+import {faHeart, faRetweet} from "@fortawesome/free-solid-svg-icons";
 import {faArrowUpFromBracket} from "@fortawesome/free-solid-svg-icons/faArrowUpFromBracket";
 
-const PostFooter = ({post}) => {
+const TuitFooter = ({post}) => {
     return <div className="wd-item-footer">
         <ul className="wd-reaction-list">
             <li>
@@ -22,8 +21,7 @@ const PostFooter = ({post}) => {
             </li>
             <li>
                 <a href="#" className="wd-remove-link-text-decor wd-reaction-count">
-                    {!post.liked && <FontAwesomeIcon className="wd-right-margin" icon={faHeart}/>}
-                    {post.liked && <FontAwesomeIcon icon={faHeartPulse} />}
+                    <FontAwesomeIcon className={`wd-right-margin ${post.liked === true ? 'text-danger' : ''}`} icon={faHeart}/>
                     <span className="wd-reaction-count">{post.likes}</span>
                 </a>
             </li>
@@ -35,4 +33,4 @@ const PostFooter = ({post}) => {
         </ul>
     </div>
 }
-export default PostFooter;
+export default TuitFooter;

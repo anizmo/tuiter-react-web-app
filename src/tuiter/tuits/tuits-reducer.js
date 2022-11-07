@@ -10,8 +10,8 @@ const currentUser = {
 
 const templateTuit = {
     ...currentUser,
-    "topic": "Space",
-    "time": "2h",
+    "topic": "Education",
+    "time": "0 min",
     "liked": false,
     "replies": 0,
     "retuits": 0,

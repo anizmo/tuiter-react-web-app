@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PostEmbed from "./post-embed";
-import PostFooter from "./post-footer";
+import TuitFooter from "./tuit-footer";
 import {faCircleCheck} from "@fortawesome/free-solid-svg-icons/faCircleCheck";
 import {faEllipsis} from "@fortawesome/free-solid-svg-icons";
 
@@ -47,7 +47,7 @@ const PostItem = (
                         <FontAwesomeIcon className={"wd-right-margin wd-left-margin float-end wd-reaction-count"} icon={faEllipsis} /></div>
                     <div className={"wd-bottom-margin-medium"}>{post.content} <a className={"wd-thread-link"} href={`https://www.${post.url}`}>{post.url}</a></div>
                     <PostEmbed embed = {post.embed}/>
-                    <PostFooter likesCount={post.likesCount} commentsCount={post.commentsCount} retweetCount={post.retweetCount}/>
+                    <TuitFooter likesCount={post.likesCount} commentsCount={post.commentsCount} retweetCount={post.retweetCount}/>
                     {post.threadUrl != null && <a className={"wd-thread-link wd-top-margin wd-bottom-margin"} href={post.threadUrl}> Show this thread </a>}
                 </div>
             </div>

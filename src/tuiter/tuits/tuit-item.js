@@ -1,5 +1,5 @@
 import React from "react";
-import PostFooter from "../post-list/post-footer";
+import TuitFooter from "../post-list/tuit-footer";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCircleCheck} from "@fortawesome/free-solid-svg-icons/faCircleCheck";
 import {useDispatch} from "react-redux";
@@ -28,7 +28,7 @@ const TuitItem = ({post}) => {
                         <span className="fw-normal wd-reaction-count">{post.handle} . {post.time}</span>
                     </div>
                     <div className={"wd-bottom-margin-medium"}>{post.tuit}</div>
-                    <PostFooter post={post}/>
+                    <TuitFooter post={post}/>
                 </div>
             </div>
         </li>

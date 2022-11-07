@@ -4,13 +4,13 @@
   "handle": "@anizmo",
   "profilePicture": "profile_pic.png",
   "bannerPicture": "header.png",
-  "bio": "This is the bio that is coming from the redux store",
+  "bio": "A Computer Science Graduate student at Northeastern University with a demonstrated history of working in the computer software industry in the E-Commerce, Analytics, Business Intelligence, Customer Relationship Management, Augmented Reality, Game Development domains.",
   "website": "anizmo.github.io",
   "location": "Boston, MA",
   "dateOfBirth": "1995-11-09",
   "dateJoined": "1-4-2009",
-  "followingCount": 1,
-  "followersCount": 1000,
+  "followingCount": 121,
+  "followersCount": 1331,
   "tuitsCount": "1,234"
 }
 
