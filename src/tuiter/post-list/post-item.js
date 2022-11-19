@@ -7,25 +7,7 @@ import {faCircleCheck} from "@fortawesome/free-solid-svg-icons/faCircleCheck";
 import {faEllipsis} from "@fortawesome/free-solid-svg-icons";
 
 const PostItem = (
-    {
-        post = {
-            "name": "SpaceX",
-            "isVerified": true,
-            "handle": "@SpaceX",
-            "retweetedBy": "Elon Musk",
-            "content": "Dennis and Akiko Tito are the first two crewmembers on Starship's second commercial spaceflight around the moon -> spacex.com/updates",
-            "time": "15h",
-            "image": "spacex.png",
-            "commentsCount": "595",
-            "retweetCount": "1168",
-            "likesCount": "11.1K",
-            "threadUrl": "www.google.com",
-            "embed": {
-                "type":"image",
-                "content":"abc"
-            }
-        }
-    }
+    {post}
 ) => {
     return(
         <li className="list-group-item">
@@ -38,10 +20,10 @@ const PostItem = (
                 </p>}
                 <br/>
                 <div className="col-2">
-                    <img width={80} className="float-end rounded-circle" src={`/images/${post.image}`} alt={post.name}/>
+                    <img width={80} className="float-end rounded-circle" src={`/images/${post.image}`} alt={post.username}/>
                 </div>
                 <div className="col-10">
-                    <div className="fw-bolder">{post.name}
+                    <div className="fw-bolder">{post.username}
                         {post.isVerified === true && <FontAwesomeIcon className={"wd-right-margin wd-left-margin"} icon={faCircleCheck} />}
                         <span className="fw-normal wd-reaction-count">{post.handle} . {post.time}</span>
                         <FontAwesomeIcon className={"wd-right-margin wd-left-margin float-end wd-reaction-count"} icon={faEllipsis} /></div>

@@ -3,12 +3,12 @@ import TuitFooter from "../post-list/tuit-footer";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCircleCheck} from "@fortawesome/free-solid-svg-icons/faCircleCheck";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "./tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 const TuitItem = ({post}) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
     return (
         <li className="list-group-item">
@@ -16,14 +16,14 @@ const TuitItem = ({post}) => {
                 <br/>
                 <div className="col-auto">
                     <img width={50} className="float-start rounded-circle" src={`/images/${post.image}`}
-                         alt={post.userName}/>
+                         alt={post.username}/>
                 </div>
                 <div className="col-10">
                     <div>
                         <i className="bi bi-x-lg float-end"
                            onClick={() => deleteTuitHandler(post._id)}></i>
                     </div>
-                    <div className="fw-bolder">{post.userName}
+                    <div className="fw-bolder">{post.username}
                         <FontAwesomeIcon className={"wd-right-margin wd-left-margin"} icon={faCircleCheck}/>
                         <span className="fw-normal wd-reaction-count">{post.handle} . {post.time}</span>
                     </div>
